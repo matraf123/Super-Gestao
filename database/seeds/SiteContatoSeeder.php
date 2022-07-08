@@ -12,7 +12,7 @@ class SiteContatoSeeder extends Seeder
      */
     public function run()
     {
-        /*$contato = new SiteContato();
+    /*    $contato = new SiteContato();
         $contato->nome = 'Sistem';
         $contato->telefone = '555-5555-5555';
         $contato->email = 'System@gmail.com'; 
