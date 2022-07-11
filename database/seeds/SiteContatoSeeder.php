@@ -12,15 +12,15 @@ class SiteContatoSeeder extends Seeder
      */
     public function run()
     {
-    /*    $contato = new SiteContato();
-        $contato->nome = 'Sistem';
-        $contato->telefone = '555-5555-5555';
-        $contato->email = 'System@gmail.com'; 
-        $contato->motivo_contato = '1';
-        $contato->mensagem = 'Seja bem vindo';
-        $contato->save();*/
+      $contato = new SiteContato();
+        $contato->nome = 'Sistema';
+        $contato->telefone = '55-5555-5555';
+        $contato->email = 'Systema@gmail.com'; 
+        $contato->motivo_contato = '3';
+        $contato->mensagem = 'welcome';
+        $contato->save();
 
-        factory(SiteContato::class, 100)->create();
+     
     }
 }
 

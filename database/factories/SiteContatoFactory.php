@@ -10,7 +10,7 @@ $factory->define(SiteContato::class, function (Faker $faker) {
         'nome' => $faker->name,
         'telefone' =>$faker->tollFreePhoneNumber,
         'email' => $faker->unique()->email,
-        'motivo_contato' =>$faker->randomElement([1,2, 3]),
+        'motivo_contato' =>$faker->randomElements(['1','2', '3']),
         'mensagem' => $faker->text(200)
     ];
 });
