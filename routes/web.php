@@ -32,7 +32,13 @@ Route::get('/', function () {
         Route::get('/home', 'HomeController@index')->name('app.home');
         Route::get('/sair', 'LoginController@sair')->name('app.sair');                
         Route::get('/cliente', 'ClienteController@index')->name('app.cliente');
-        Route::get('/fornecedore', 'FornecedorController@index')->name('app.fornecedore');
+        
+        Route::get('/fornecedor', 'FornecedorController@index')->name('app.fornecedor');
+        Route::post('/fornecedor/listar', 'FornecedorController@listar')->name('app.fornecedor.listar');
+        Route::get('/fornecedor/adicionar', 'FornecedorController@adicionar')->name('app.fornecedor.adicionar');
+        Route::post('/fornecedor/adicionar', 'FornecedorController@adicionar')->name('app.fornecedor.adicionar');
+        Route::get('/fornecedor/editar/{id}', 'FornecedorController@editar')->name('app.fornecedor.editar');
+
         Route::get('/produto', 'ProdutoController@index')->name('app.produto');
     });
 
