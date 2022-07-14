@@ -106,7 +106,7 @@ button:hover {
 .conteudo-destaque {
     width: 100%;
     height: 100%;
-    min-height: 800px; 
+    min-height: 800px;
 }
 
 .esquerda {
@@ -157,6 +157,7 @@ button:hover {
     background-color: #2a9ee2;
     text-align: center;
 }
+
 .titulo-pagina-2 {
     padding: 70px 0px 10px 0px;
     margin-bottom: 10px;
@@ -194,4 +195,12 @@ button:hover {
     margin: 0px 15px 0px 15px;
 }
 
-                                                                                        
+.pagination li {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.pagination ul {
+    list-style-type: none;
+}
