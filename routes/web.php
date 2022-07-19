@@ -33,7 +33,7 @@ Route::get('/', function () {
         Route::get('/sair', 'LoginController@sair')->name('app.sair');                
         Route::get('/cliente', 'ClienteController@index')->name('app.cliente');
         
-       
+       //fornecedor rotas
         Route::get('/fornecedor', 'FornecedorController@index')->name('app.fornecedor');
        
         Route::get('/fornecedor/listar', 'FornecedorController@listar')->name('app.fornecedor.listar');
@@ -46,8 +46,12 @@ Route::get('/', function () {
 
         Route::get('/fornecedor/excluir/{id}', 'FornecedorController@excluir')->name('app.fornecedor.excluir');
 
-       
+       //produto rotas
         Route::resource('produto', 'ProdutoController');
+
+        //produto detalhes rotas
+        Route::resource('produto-detalhe', 'ProdutoDetalheController');
+
     });
 
 Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('site.teste');
