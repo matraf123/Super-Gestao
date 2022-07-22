@@ -64,7 +64,7 @@ class ProdutoController extends Controller
         ];
 
         $request->validate($regras, $feedback);
-        Produto::create($request->all());
+        Item::create($request->all());
         return redirect()->route('produto.index');
     }
 
